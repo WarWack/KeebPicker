@@ -1,0 +1,1496 @@
+
+html {
+    height: 100%;
+  }
+  body {
+    height: 50%;
+    margin: 0;
+    background: #91c1d1;
+    background: -moz-linear-gradient(top, #91c1d1 0%, #91d1c1 99%);
+    background: -webkit-linear-gradient(top, #91c1d1 0%, #91d1c1 99%);
+    background: linear-gradient(to bottom, #91c1d1 0%, #91d1c1 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="#91c1d1",
+        endColorstr="#91d1c1",
+        GradientType=0
+      );
+    text-align: center;
+    color: #fff;
+       /* The image used */
+  background-image: url("../images/backgroundimage.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+
+  
+  h1 {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-top: 10em;
+  }
+  #quiz {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      width: 800px;
+      margin: auto;
+  }
+  #questions {
+      font-size: 1.3em;
+  }
+  #answers {
+      list-style-type: none;
+      margin: 25px 0 0 0;
+      padding: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: 77.5px;
+  }
+  #answers li {
+      float: left;
+      /*margin:0 5px 0 0;*/
+      margin: 0px 15px 15px 0px;
+      width: 200px;
+      height: 50px;
+      position: relative;
+  }
+  #answers label, #answers input {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  #answers input[type="radio"] {
+      opacity: 0.011;
+      z-index: 100;
+  }
+  #answers input[type="radio"]:checked + label {
+      opacity: 1;
+  }
+  #answers label {
+    
+      padding: 5px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0.7;
+      transition: opacity 0.2s linear;
+
+  }
+  #answers label:hover {
+      opacity: 1;
+      background-color:rgb(7, 249, 196);
+      
+  }
+  .button {
+      border: 2px solid #fff;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: transparent;
+      text-transform: uppercase;
+      padding: 10px;
+      color: #fff;
+  }
+  .button:hover {
+      cursor: pointer;
+      background-color:rgb(7, 249, 196);
+  }
+  #results {
+      display: none;
+      
+  }
+  #error {
+      display: none;	
+      }
+      
+  /*GEOCITIES WEBPAGE STYLES */	
+  /* Cute styles */
+  .onehundredsixty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .onehundredsixty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .onehundredsixty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .onehundredsixty a:hover {
+  background-color: aqua;
+
+  }
+  .onehundredsixty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .onehundredsixty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .onehundredsixty #img1 {
+      content: url("../images/10060.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .onehundredsixty #img2 {
+    content: url("../images/10060.gif");
+  }
+  .onehundredsixty #img3 {
+      content: url("../images/10060\(3\).jpg");
+  }
+  .onehundredsixty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .onehundredsixty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .onehundredsixty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .onehundredsixty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+  
+
+   .onehundredsixtyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .onehundredsixtyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .onehundredsixtyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .onehundredsixtyfive a:hover {
+  background-color: aqua;
+
+  }
+  .onehundredsixtyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .onehundredsixtyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .onehundredsixtyfive #img1 {
+      content: url("../images/10065.jpg");
+      height: 200px;
+      width: auto;
+    float: left;
+  }
+  .onehundredsixtyfive #img2 {
+    content: url("../images/10065\(gif\).gif");
+  }
+  .onehundredsixtyfive #img3 {
+      content: url("../images/10065\(2\).png");
+
+  }
+  .onehundredsixtyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .onehundredsixtyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .onehundredsixtyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .onehundredsixtyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .onehundredseventyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .onehundredseventyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .onehundredseventyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .onehundredseventyfive a:hover {
+  background-color: aqua;
+
+  }
+  .onehundredseventyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .onehundredseventyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .onehundredseventyfive #img1 {
+      content: url("../images/10075.jpg");
+      height: 200;
+      width: auto;
+    float: left;
+  }
+  .onehundredseventyfive #img2 {
+    content: url("../images/10075.gif");
+  }
+  .onehundredseventyfive #img3 {
+      content: url("../images/10075\(2\).jpg");
+  }
+  .onehundredseventyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .onehundredseventyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .onehundredseventyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .onehundredseventyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .onehundredeighty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .onehundredeighty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .onehundredeighty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .onehundredeighty a:hover {
+  background-color: aqua;
+
+  }
+  .onehundredeighty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .onehundredeighty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .onehundredeighty #img1 {
+      content: url("../images/10080.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .onehundredeighty #img2 {
+    content: url("../images/10080.gif");
+  }
+  .onehundredeighty #img3 {
+      content: url("../images/10080\ \(2\).jpg");
+  }
+  .onehundredeighty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .onehundredeighty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .onehundredeighty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .onehundredeighty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .onehundredfull {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .onehundredfull h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .onehundredfull a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .onehundredfull a:hover {
+  background-color: aqua;
+
+  }
+  .onehundredfull a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .onehundredfull div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .onehundredfull #img1 {
+      content: url("../images/10096.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .onehundredfull #img2 {
+    content: url("../images/10096.gif");
+  }
+  .onehundredfull #img3 {
+      content: url("../images/10096\(2\).jpg");
+  }
+  .onehundredfull div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .onehundredfull #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .onehundredfull #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .onehundredfull #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .twohundredsixty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .twohundredsixty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .twohundredsixty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .twohundredsixty a:hover {
+  background-color: aqua;
+
+  }
+  .twohundredsixty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .twohundredsixty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .twohundredsixty #img1 {
+      content: url("../images/20060.jpg");
+      height: auto;
+      width: 700px;
+    float: left;
+  }
+  .twohundredsixty #img2 {
+    content: url("../images/20060.gif");
+  }
+  .twohundredsixty #img3 {
+      content: url("../images/20060\(2\).jpg");
+  }
+  .twohundredsixty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .twohundredsixty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .twohundredsixty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .twohundredsixty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .twohundredsixtyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .twohundredsixtyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .twohundredsixtyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .twohundredsixtyfive a:hover {
+  background-color: aqua;
+
+  }
+  .twohundredsixtyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .twohundredsixtyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .twohundredsixtyfive #img1 {
+      content: url("../images/20065.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .twohundredsixtyfive #img2 {
+    content: url("../images/20065.gif");
+  }
+  .twohundredsixtyfive #img3 {
+      content: url("../images/20065\(2\).jpg");
+  }
+  .twohundredsixtyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .twohundredsixtyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .twohundredsixtyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .twohundredsixtyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .twohundredseventyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .twohundredseventyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .twohundredseventyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .twohundredseventyfive a:hover {
+  background-color: aqua;
+
+  }
+  .twohundredseventyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .twohundredseventyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .twohundredseventyfive #img1 {
+      content: url("../images/20075.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .twohundredseventyfive #img2 {
+    content: url("../images/20075.gif");
+  }
+  .twohundredseventyfive #img3 {
+      content: url("../images/20075\(2\).jpg");
+  }
+  .twohundredseventyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .twohundredseventyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .twohundredseventyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .twohundredseventyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .twohundredeighty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .twohundredeighty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .twohundredeighty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .twohundredeighty a:hover {
+  background-color: aqua;
+
+  }
+  .twohundredeighty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .twohundredeighty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .twohundredeighty #img1 {
+      content: url("../images/20080.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .twohundredeighty #img2 {
+    content: url("../images/20080.gif");
+  }
+  .twohundredeighty #img3 {
+      content: url("../images/20080\(2\).png");
+  }
+  .twohundredeighty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .twohundredeighty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .twohundredeighty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .twohundredeighty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+  
+   .twohundredfull {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .twohundredfull h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .twohundredfull a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .twohundredfull a:hover {
+  background-color: aqua;
+
+  }
+  .twohundredfull a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .twohundredfull div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .twohundredfull #img1 {
+      content: url("../images/20096.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .twohundredfull #img2 {
+    content: url("../images/20090.gif");
+  }
+  .twohundredfull #img3 {
+      content: url("../images/20090\(2\).png");
+  }
+  .twohundredfull div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .twohundredfull #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .twohundredfull #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .twohundredfull #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .threehundredsixty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .threehundredsixty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .threehundredsixty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .threehundredsixty a:hover {
+  background-color: aqua;
+
+  }
+  .threehundredsixty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .threehundredsixty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .threehundredsixty #img1 {
+      content: url("../images/30060.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .threehundredsixty #img2 {
+    content: url("../images/30060.gif");
+  }
+  .threehundredsixty #img3 {
+      content: url("../images/30060\(2\).png");
+  }
+  .threehundredsixty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .threehundredsixty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .threehundredsixty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .threehundredsixty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .threehundredsixtyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .threehundredsixtyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .threehundredsixtyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .threehundredsixtyfive a:hover {
+  background-color: aqua;
+
+  }
+  .threehundredsixtyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .threehundredsixtyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .threehundredsixtyfive #img1 {
+      content: url("../images/30065.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .threehundredsixtyfive #img2 {
+    content: url("../images/30065.gif");
+  }
+  .threehundredsixtyfive #img3 {
+      content: url("../images/30065\(2\).jpg");
+  }
+  .threehundredsixtyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .threehundredsixtyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .threehundredsixtyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .threehundredsixtyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .threehundredseventyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .threehundredseventyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .threehundredseventyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .threehundredseventyfive a:hover {
+  background-color: aqua;
+
+  }
+  .threehundredseventyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .threehundredseventyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .threehundredseventyfive #img1 {
+      content: url("../images/30075.jpg");
+      height: auto;
+      width: auto;
+    float: left;
+  }
+  .threehundredseventyfive #img2 {
+    content: url("../images/10060.gif");
+  }
+  .threehundredseventyfive #img3 {
+      content: url("../images/10060\(3\).jpg");
+  }
+  .threehundredseventyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .threehundredseventyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .threehundredseventyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .threehundredseventyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .threehundredeighty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .threehundredeighty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .threehundredeighty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .threehundredeighty a:hover {
+  background-color: aqua;
+
+  }
+  .threehundredeighty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .threehundredeighty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .threehundredeighty #img1 {
+      content: url("../images/30080.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .threehundredeighty #img2 {
+    content: url("../images/30080.gif");
+  }
+  .threehundredeighty #img3 {
+      content: url("../images/30080\(2\).png");
+  }
+  .threehundredeighty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .threehundredeighty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .threehundredeighty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .threehundredeighty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .threehundredfull {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .threehundredfull h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .threehundredfull a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .threehundredfull a:hover {
+  background-color: aqua;
+
+  }
+  .threehundredfull a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .threehundredfull div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .threehundredfull #img1 {
+      content: url("../images/30096.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .threehundredfull #img2 {
+    content: url("../images/30096.gif");
+  }
+  .threehundredfull #img3 {
+      content: url("../images/30096\(2\).jpg");
+  }
+  .threehundredfull div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .threehundredfull #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .threehundredfull #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .threehundredfull #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .fourhundredsixty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .fourhundredsixty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fourhundredsixty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .fourhundredsixty a:hover {
+  background-color: aqua;
+
+  }
+  .fourhundredsixty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .fourhundredsixty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .fourhundredsixty #img1 {
+      content: url("../images/40060.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .fourhundredsixty #img2 {
+    content: url("../images/40060.gif");
+  }
+  .fourhundredsixty #img3 {
+      content: url("../images/40060\(2\).jpg");
+  }
+  .fourhundredsixty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .fourhundredsixty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .fourhundredsixty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .fourhundredsixty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .fourhundredsixtyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .fourhundredsixtyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fourhundredsixtyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .fourhundredsixtyfive a:hover {
+  background-color: aqua;
+
+  }
+  .fourhundredsixtyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .fourhundredsixtyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .fourhundredsixtyfive #img1 {
+      content: url("../images/40065.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .fourhundredsixtyfive #img2 {
+    content: url("../images/40065.gif");
+  }
+  .fourhundredsixtyfive #img3 {
+      content: url("../images/40065\(2\).jpg");
+  }
+  .fourhundredsixtyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .fourhundredsixtyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .fourhundredsixtyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .fourhundredsixtyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .fourhundredseventyfive {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .fourhundredseventyfive h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fourhundredseventyfive a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .fourhundredseventyfive a:hover {
+  background-color: aqua;
+
+  }
+  .fourhundredseventyfive a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .fourhundredseventyfive div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .fourhundredseventyfive #img1 {
+      content: url("../images/40075.png");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .fourhundredseventyfive #img2 {
+    content: url("../images/40075.gif");
+  }
+  .fourhundredseventyfive #img3 {
+      content: url("../images/40075\ v2.png");
+  }
+  .fourhundredseventyfive div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .fourhundredseventyfive #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .fourhundredseventyfive #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .fourhundredseventyfive #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .fourhundredeighty {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .fourhundredeighty h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fourhundredeighty a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .fourhundredeighty a:hover {
+  background-color: aqua;
+
+  }
+  .fourhundredeighty a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .fourhundredeighty div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .fourhundredeighty #img1 {
+      content: url("../images/40080.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .fourhundredeighty #img2 {
+    content: url("../images/40080.gif");
+  }
+  .fourhundredeighty #img3 {
+      content: url("../images/40080.png");
+  }
+  .fourhundredeighty div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .fourhundredeighty #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .fourhundredeighty #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .fourhundredeighty #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
+
+
+   .fourhundredfull {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      cursor: url(https://web.archive.org/web/20090830074921/http://www.geocities.com/anneli1970/hkanicursor.gif), auto;
+
+      
+  }
+
+  .fourhundredfull h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      margin-top: 2em;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fourhundredfull a {
+      color: yellow;
+      margin: 0 10px 0 20px;
+  }
+  .fourhundredfull a:hover {
+  background-color: aqua;
+
+  }
+  .fourhundredfull a:before {
+      content: url('https://www.youtube.com/watch?v=M3mRlrMYKHg');
+      margin-right: 10px;
+  }
+  .fourhundredfull div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .fourhundredfull #img1 {
+      content: url("../images/40096.jpg");
+      height: 500px;
+      width: auto;
+    float: left;
+  }
+  .fourhundredfull #img2 {
+    content: url("../images/40096.gif");
+  }
+  .fourhundredfull #img3 {
+      content: url("../images/40096\(2\).jpg");
+  }
+  .fourhundredfull div[id^='affiliate'] {
+      border: solid purple;
+      width: 100px;
+      margin-right: -10px;
+      display: inline-block;
+  }
+  .fourhundredfull #affiliate1 {
+      content: url('https://web.archive.org/web/20031121213718/http://www.geocities.com/neoasparagus/img/affiliate_neonations.gif');
+      
+  }
+  .fourhundredfull #affiliate2 {
+      content: url('https://web.archive.org/web/20091027155351/http://www.geocities.com/lucious_kitty150/button1affiliate.gif');
+  }
+  .fourhundredfull #affiliate3 {
+      content: url('https://web.archive.org/web/20090902111758/http://geocities.com/shaina2kaiba/www/affiliates/affiliate05.gif');
+  }
